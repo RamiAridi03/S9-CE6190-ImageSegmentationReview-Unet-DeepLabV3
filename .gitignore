@@ -1,0 +1,75 @@
+# === Python ===
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# === Notebooks ===
+
+.ipynb_checkpoints/
+*.ipynb_save
+*.ipynb_checkpoint
+
+# === Data ===
+
+data/*.csv
+data/*.tsv
+data/*.json
+data/*.xlsx
+data/*.parquet
+*.h5
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+
+# === Logs & Outputs ===
+
+*.log
+*.out
+*.err
+logs/
+outputs/
+results/
+checkpoints/
+runs/
+
+# === VS Code ===
+
+.vscode/
+*.code-workspace
+
+# === Mac / système ===
+
+.DS_Store
+Thumbs.db
+
+
+# === Virtual envs ===
+
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+
+# === Colab/Drive ===
+
+/content/
+/gdrive/
+/drive/
+
+
+# === Jupyter Kernel / config ===
+
+.ipynb_checkpoints
+.jupyter/
+.python_history
