@@ -1,8 +1,8 @@
-# Image Segmentation Review — U-Net & DeepLabV3(+)
+# Image Segmentation Review: U-Net & DeepLabV3
 
 **Notebook:** `ce6190-segmentation-review-unet-deeplabv3` (file: `ce6190-segmentation-review-unet-deeplabv3.ipynb`)
 
-Compact, reproducible segmentation evaluation comparing **DeepLabV3(+)** and **U-Net** on small, easy-to-run datasets (Cityscapes subset, Kvasir-SEG, Supervisely Person). The notebook trains/evaluates models, runs a small ablation suite, and produces the plots/tables needed for a short report.
+Compact, reproducible segmentation evaluation comparing **DeepLabV3** and **U-Net** on small, easy-to-run datasets (Cityscapes subset, Kvasir-SEG, Supervisely Person). The notebook trains/evaluates models, runs a small ablation suite, and produces the plots/tables needed for a short report.
 
 
 ## Repository contents
@@ -122,10 +122,10 @@ See the **Experiment table** below to map names to files.
 
 | Model Name                 | Model      | TrainedOn  | EvalOn     | Backbone  | Pretrained | OutputStride | InputSize | Notes                 |
 | -------------------------- | ---------- | ---------- | ---------- | --------- | ---------- | ------------ | --------- | --------------------- |
-| deeplabv3_cityscapes       | DeepLabV3+ | Cityscapes | Cityscapes | resnet50  | imagenet   | 8            | 256       | Baseline              |
-| deeplabv3_101_cityscapes   | DeepLabV3+ | Cityscapes | Cityscapes | resnet101 | imagenet   | 8            | 256       | Ablation (backbone)   |
-| deeplabv3_os16_cityscapes  | DeepLabV3+ | Cityscapes | Cityscapes | resnet50  | imagenet   | 16           | 256       | Hyperparameter (OS)         |
-| deeplabv3_kvasir           | DeepLabV3+ | Kvasir     | Kvasir     | resnet50  | imagenet   | 8           | 256       | Baseline              |
+| deeplabv3_cityscapes       | DeepLabV3 | Cityscapes | Cityscapes | resnet50  | imagenet   | 8            | 256       | Baseline              |
+| deeplabv3_101_cityscapes   | DeepLabV3 | Cityscapes | Cityscapes | resnet101 | imagenet   | 8            | 256       | Ablation (backbone)   |
+| deeplabv3_os16_cityscapes  | DeepLabV3 | Cityscapes | Cityscapes | resnet50  | imagenet   | 16           | 256       | Hyperparameter (OS)         |
+| deeplabv3_kvasir           | DeepLabV3 | Kvasir     | Kvasir     | resnet50  | imagenet   | 8           | 256       | Baseline              |
 | unet_cityscapes            | U-Net      | Cityscapes | Cityscapes | resnet50  | imagenet   | N/A          | 256       | Baseline              |
 | unet_noimagenet_cityscapes | U-Net      | Cityscapes | Cityscapes | resnet50  | None       | N/A          | 256       | Ablation (init)       |
 | unet_kvasir                | U-Net      | Kvasir     | Kvasir     | resnet50  | imagenet   | N/A          | 256       | Baseline              |
@@ -135,7 +135,7 @@ See the **Experiment table** below to map names to files.
 
 ## Ablations, hyperparameter & cross-eval
 
-**DeepLabV3+**
+**DeepLabV3**
 
 * Backbone depth: `resnet50` → `resnet101`
 * Output stride: `OS=8` → `OS=16`
