@@ -1,6 +1,6 @@
 # Image Segmentation Review: U-Net & DeepLabV3
 
-**Notebook:** `ce6190-segmentation-review-unet-deeplabv3` (file: `ce6190-segmentation-review-unet-deeplabv3.ipynb`)
+**Notebook:** `ce6190-segmentation-review-unet-deeplabv3`
 
 Compact, reproducible segmentation evaluation comparing **DeepLabV3** and **U-Net** on small, easy-to-run datasets (Cityscapes subset, Kvasir-SEG, Supervisely Person). The notebook trains/evaluates models, runs a small ablation suite, and produces the plots/tables needed for a short report.
 
