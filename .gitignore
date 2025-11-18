@@ -73,3 +73,11 @@ env/
 .ipynb_checkpoints
 .jupyter/
 .python_history
+
+# === Compressed files ===
+*.zip
+*.tar.gz
+*.rar
+
+# Specific to this project
+segmentation-review-results/
